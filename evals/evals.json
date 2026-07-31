@@ -1,0 +1,26 @@
+{
+  "skill_name": "pdf-to-markdown",
+  "evals": [
+    {
+      "id": 0,
+      "name": "cn-course-slides",
+      "prompt": "桌面上有份《概率统计第12章 平稳过程revbyzuo.pdf》课件，帮我转成 Markdown，我之后想直接对着 md 复习。图片也要保留。",
+      "expected_output": "输出目录含 <名称>.md（头部有转换报告）+ assets/ 图片 + scan_report.json；md 里中文内容完整，图片为相对路径引用",
+      "files": ["D:\\用户\\Lenovo\\桌面\\概率统计第12章 平稳过程revbyzuo.pdf"]
+    },
+    {
+      "id": 1,
+      "name": "en-paper",
+      "prompt": "帮我把桌面论文目录里 Arulkumaran 那篇 DRL Survey 转成 markdown，我要快速扫一遍结构。",
+      "expected_output": "输出 <名称>.md；标题层级存在；英文正文可读；转换报告块在最前",
+      "files": ["D:\\用户\\Lenovo\\桌面\\论文\\Arulkumaran 等 - 2017 - A Brief Survey of Deep Reinforcement Learning.pdf"]
+    },
+    {
+      "id": 2,
+      "name": "scan-homework",
+      "prompt": "我桌面课程文件夹里有高数作业的扫描件 PDF（文件名带\"扫描件\"，是纯图片没有文字），能帮我把里面的内容转成文字吗？",
+      "expected_output": "正确识别为扫描件（页面无文本层），向用户明确说明无法直接转文字并给出替代建议；不假装成功、不产出错误内容",
+      "files": []
+    }
+  ]
+}
