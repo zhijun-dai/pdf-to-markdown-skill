@@ -1,8 +1,16 @@
 # pdf-to-markdown-skill
 
+[![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+
 A Claude Code skill that converts text-based PDFs (lecture slides, textbook chapters, papers, reports) into a clean, AI-friendly Markdown document — with images extracted, scan-like pages detected and flagged, and a conversion report up front so the reader knows exactly what may be missing.
 
 The point: after conversion you read the `.md`, never the PDF again.
+
+## Why this skill?
+
+PDF→Markdown converters (marker, docling, etc.) are powerful but heavy: PyTorch installs, GPUs, CLI flags to learn. This skill is **native to Claude Code** — you just say *"把这份 PDF 转成 Markdown"* and it's done.
+
+The key difference is the **conversion report**: other tools give you a result with no idea how trustworthy it is. This skill tells you upfront which pages lost content (pure-image pages, dense math, broken font mappings), so you — or the AI reading the output — know exactly what to double-check. Built for students and researchers with piles of Chinese textbooks, lecture decks, and papers.
 
 ## Features
 
@@ -73,9 +81,30 @@ images: 5
 
 ```bash
 git clone https://github.com/zhijun-dai/pdf-to-markdown-skill
-# copy or symlink the folder into your skills directory, e.g.:
-#   C:\Users\<you>\.claude\skills\pdf-to-markdown
 ```
+
+Then copy the folder into your skills directory (Claude Code discovers skills there automatically):
+
+| OS | Skills directory |
+|----|------------------|
+| Windows | `%USERPROFILE%\.claude\skills\` (e.g. `C:\Users\you\.claude\skills\`) |
+| macOS / Linux | `~/.claude/skills/` |
+
+```bash
+# Windows (PowerShell)
+Copy-Item -Recurse pdf-to-markdown-skill $env:USERPROFILE\.claude\skills\
+
+# macOS / Linux
+cp -r pdf-to-markdown-skill ~/.claude/skills/
+```
+
+Dependencies (only needed once):
+
+```bash
+pip install pymupdf4llm markdown
+```
+
+Restart Claude Code, then just say: *"把这个 PDF 转成 Markdown"* — the skill triggers and does the rest.
 
 ## License
 
