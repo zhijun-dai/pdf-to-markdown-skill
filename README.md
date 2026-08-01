@@ -72,7 +72,7 @@ images: 5
 ## Install as a Claude Code skill
 
 ```bash
-git clone https://github.com/<you>/pdf-to-markdown-skill
+git clone https://github.com/zhijun-dai/pdf-to-markdown-skill
 # copy or symlink the folder into your skills directory, e.g.:
 #   C:\Users\<you>\.claude\skills\pdf-to-markdown
 ```
