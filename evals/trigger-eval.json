@@ -1,0 +1,22 @@
+[
+  {"query": "桌面上有份老师发的 PDF 课件，帮我转成 markdown，我复习的时候好直接看", "should_trigger": true},
+  {"query": "把这篇论文转成 md 吧，我懒得开 PDF 了", "should_trigger": true},
+  {"query": "这个 pdf 里的内容你直接读吧，转个 markdown 存下来方便以后用", "should_trigger": true},
+  {"query": "帮我把下载的这本电子书变成 AI 能读的文档格式", "should_trigger": true},
+  {"query": "我这边看 PDF 不方便，你帮我把它转成文字版试试，markdown 就行", "should_trigger": true},
+  {"query": "老师发的讲义 PDF 里全是图片文字混着，能帮我转成 md 吗", "should_trigger": true},
+  {"query": "把这份调研报告转成 HTML，我要嵌到课程主页里", "should_trigger": true},
+  {"query": "pdf to markdown for my lecture slides so I can read them in the terminal", "should_trigger": true},
+  {"query": "把课堂笔记 PDF 提取成文字给我，我投喂给别的 AI 用", "should_trigger": true},
+  {"query": "我需要把这本书的某个章节转成 Markdown，图片也要保留", "should_trigger": true},
+  {"query": "把这个 PDF 和那个 PDF 合并成一个文件", "should_trigger": false},
+  {"query": "帮我在这份 PDF 的每一页加一个学校 logo 水印", "should_trigger": false},
+  {"query": "这份 PDF 表单有几项要填，帮我填一下", "should_trigger": false},
+  {"query": "把这份 Word 文档转成 PDF 发给老师", "should_trigger": false},
+  {"query": "我把笔记写成了 markdown，能转成 PDF 交作业吗", "should_trigger": false},
+  {"query": "帮我用 OCR 把这堆扫描作业的照片识别成文字", "should_trigger": false},
+  {"query": "这个 PDF 加密了打不开，帮我解密一下", "should_trigger": false},
+  {"query": "把这个 PPT 转成 PDF，然后压缩到 5MB 以内", "should_trigger": false},
+  {"query": "帮我写一份关于 PDF 格式标准的调研报告，两页纸", "should_trigger": false},
+  {"query": "把这份扫描件 PDF 每页转成高清 PNG 存到文件夹", "should_trigger": false}
+]
